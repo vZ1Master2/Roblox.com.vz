@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox.com.vz — Accueil</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,sans-serif;background:#f3f4f6;color:#222}
+    header{height:64px;background:#fff;border-bottom:1px solid #ddd;display:flex;align-items:center;gap:22px;padding:0 20px;position:sticky;top:0}
+    .logo{font-size:23px;font-weight:800;white-space:nowrap}
+    .logo span{color:#e53935}
+    .search{flex:1;max-width:520px;background:#f0f1f3;border:1px solid #ddd;border-radius:8px;padding:11px 14px;font-size:15px}
+    .btn{border:0;border-radius:8px;padding:11px 16px;font-weight:700;cursor:pointer}
+    .login{background:#eee}.signup{background:#111;color:#fff}
+    main{max-width:1150px;margin:auto;padding:28px 20px}
+    .hero{background:#111;color:#fff;border-radius:16px;padding:38px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+    .hero h1{font-size:38px;margin-bottom:12px}.hero p{color:#ccc;max-width:560px;line-height:1.5}
+    .play{display:inline-block;margin-top:20px;background:#fff;color:#111;text-decoration:none;padding:13px 20px;border-radius:9px;font-weight:800}
+    .cube{font-size:85px}
+    h2{margin:32px 0 16px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px}
+    .card{background:#fff;border-radius:12px;overflow:hidden;border:1px solid #ddd;box-shadow:0 2px 7px #0000000d}
+    .thumb{height:130px;background:linear-gradient(135deg,#ddd,#aaa);display:flex;align-items:center;justify-content:center;font-size:50px}
+    .info{padding:13px}.info h3{font-size:17px;margin-bottom:7px}.info p{font-size:13px;color:#666}
+    footer{text-align:center;padding:35px;color:#777}
+    @media(max-width:650px){header{gap:8px;padding:0 10px}.logo{font-size:18px}.search{max-width:none}.login{display:none}.hero{padding:25px}.hero h1{font-size:28px}.cube{font-size:60px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Roblox<span>.com.vz</span></div>
+    <input class="search" type="search" placeholder="Rechercher des jeux...">
+    <button class="btn login">Connexion</button>
+    <button class="btn signup">S'inscrire</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Joue. Crée. Partage.</h1>
+        <p>Découvre des expériences créées par la communauté et prépare-toi à créer ton propre univers.</p>
+        <a class="play" href="#jeux">Découvrir les jeux</a>
+      </div>
+      <div class="cube">🎮</div>
+    </section>
+
+    <h2 id="jeux">Jeux populaires</h2>
+    <section class="grid">
+      <article class="card"><div class="thumb">🏝️</div><div class="info"><h3>Island Adventure</h3><p>⭐ 4,8 · 12K joueurs</p></div></article>
+      <article class="card"><div class="thumb">⚔️</div><div class="info"><h3>Battle Legends</h3><p>⭐ 4,7 · 9K joueurs</p></div></article>
+      <article class="card"><div class="thumb">🚗</div><div class="info"><h3>City Drive</h3><p>⭐ 4,6 · 7K joueurs</p></div></article>
+      <article class="card"><div class="thumb">👻</div><div class="info"><h3>Night Escape</h3><p>⭐ 4,5 · 5K joueurs</p></div></article>
+    </section>
+  </main>
+
+  <footer>Roblox.com.vz — Projet indépendant · © 2026</footer>
+</body>
+</html>
